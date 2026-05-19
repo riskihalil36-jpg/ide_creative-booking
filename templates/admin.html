@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+<h2>DATA BOOKING IDE CREATIVE</h2>
+
+<table border="1">
+    <tr>
+        <th>Nama</th>
+        <th>Telepon</th>
+        <th>Tanggal</th>
+        <th>Layanan</th>
+    </tr>
+
+    {% for b in bookings %}
+    <tr>
+        <td>{{ b.nama }}</td>
+        <td>{{ b.telepon }}</td>
+        <td>{{ b.tanggal }}</td>
+        <td>{{ b.service }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ide Creative EO</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>IDE CREATIVE Event Organizer</h1>
+<p>Pilih layanan yang kamu butuhkan</p>
+
+<div class="container">
+    {% for item in layanan %}
+    <div class="card">
+        <h3>{{ item }}</h3>
+        <a href="/booking/{{ item }}">Booking Sekarang</a>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
